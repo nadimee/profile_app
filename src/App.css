@@ -1,38 +1,51 @@
 .App {
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px -12px;
+
+  height: 400px;
+  width: 800px;
+  margin: 20px auto;
+  margin-top:20px;
+  border-radius:15px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:rgb(238, 231, 231);
+font-size: 11px;
+background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  ), url("/public/appContainerBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+html{
+  background-color: rgb(32, 30, 30);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  ), url("/public/pageBackground.jpg");
+  
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myPic{  vertical-align: middle;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-top: 120px;
+  border: 2px solid #e2dada;
+
+}
+.name{
+
+text-shadow: black 1px 0 10px;
+}
+.adress{
+  text-shadow: black 1px 0 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
